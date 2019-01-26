@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } from 'constants';
 
 @Pipe({
   name: 'noimag'
@@ -15,7 +14,6 @@ export class NoimagPipe implements PipeTransform {
     } else {
       return 'assets/img/noimage.png';
     }
-    return null;
   }
 
 }
